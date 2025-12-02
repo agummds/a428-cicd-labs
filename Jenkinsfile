@@ -8,7 +8,7 @@ node {
   stage('Checkout') {
     checkout([$class: 'GitSCM',
       branches: [[name: '*/react-app']],
-      userRemoteConfigs: [[url: 'https://github.com/<GITHUB_USERNAME>/a428-cicd-labs.git']]
+      userRemoteConfigs: [[url: 'https://github.com/agummds/a428-cicd-labs.git']]
     ])
   }
 
